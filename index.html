@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria Prognosticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loteria Prognosticos</h1>
+
+        <div class="section">
+            <h2>Fazer Aposta</h2>
+            <form id="apostaForm">
+                <label for="prognosticos">Prognósticos (5 números entre 1 e 625):</label>
+                <input type="text" id="prognosticos" name="prognosticos" required>
+                <button type="submit">Apostar</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Sorteio</h2>
+            <button id="realizarSorteio">Realizar Sorteio</button>
+            <div id="resultados"></div>
+        </div>
+
+        <div class="section">
+            <h2>Distribuir Prêmios</h2>
+            <button id="distribuirPremios">Distribuir Prêmios</button>
+        </div>
+
+        <div class="section">
+            <h2>Reabrir Apostas</h2>
+            <button id="reabrirApostas">Reabrir Apostas</button>
+        </div>
+
+        <div class="section">
+            <h2>Mensagem</h2>
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
