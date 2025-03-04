@@ -2,62 +2,180 @@
 <html lang="pt-br">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MGWSEGKZ0V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGWSEGKZ0V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-MGWSEGKZ0V');
-</script>
+        gtag('config', 'G-MGWSEGKZ0V');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loteria Prognosticos</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionais para os botões de pagamento */
+        .payment-options {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .payment-button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .metamask-button {
+            background-color: #F6851B; /* Cor laranja da MetaMask */
+        }
+
+        .other-button {
+            background-color: #4CAF50; /* Cor verde para outros métodos */
+        }
+    </style>
 </head>
 <body>
 <div class="container">
-<h1 style="text-align: center">Blockchain Bet Brasil</h1>
+    <h1 style="text-align: center">Blockchain Bet Brasil</h1>
 
-<div class="section">
-<h2 style="text-align: center">Fazer Aposta</h2>
+    <div class="section">
+        <h2 style="text-align: center">Fazer Aposta</h2>
 
-<form id="apostaForm">
-<p><label for="prognosticos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coloca&ccedil;&atilde;o:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&ordm; Premio:&nbsp;&nbsp;2&ordm; Premio:&nbsp; </label><label for="prognosticos">3&ordm; Premio:&nbsp;4&ordm; Premio:&nbsp;5&ordm; Premio:</label></p>
+        <form id="apostaForm">
+            <p>
+                <label for="prognosticos">
+                                                                                                                                                                                      Colocação:      1º Premio:  2º Premio: 
+                </label>
+                <label for="prognosticos">3º Premio: 4º Premio: 5º Premio:</label>
+            </p>
 
-<p><label for="prognosticos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Progn&oacute;sticos:&nbsp;</label><input id="pri_premio" name="pri_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" /> <input id="seg_premio" name="seg_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" />&nbsp;<input id="ter_premio" name="ter_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" />&nbsp;<input id="qua_premio" name="qua_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" />&nbsp;<input id="qui_premio" name="qui_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" /></p>
+            <p>
+                <label for="prognosticos">
+                                                                                                                                                                                       Prognósticos: 
+                </label>
+                <input id="pri_premio" name="pri_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" />
+                <input id="seg_premio" name="seg_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" />
+                 
+                <input id="ter_premio" name="ter_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" />
+                 
+                <input id="qua_premio" name="qua_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" />
+                 
+                <input id="qui_premio" name="qui_premio" size="1" style="overflow: visible; border-top: rgb(204,204,204) 1px solid; height: 5px; font-family: inherit; border-right: rgb(204,204,204) 1px solid; width: 50px; border-bottom: rgb(204,204,204) 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; border-left: rgb(204,204,204) 1px solid; margin: 0px; padding-right: 4px; border-radius: 5px" type="text" />
+            </p>
 
-<p style="text-align: center"><button type="submit">Apostar</button></p>
+            <div class="payment-options">
+                <button type="button" class="payment-button metamask-button" id="metamaskButton">Pagar com MetaMask</button>
+                <!-- Adicione outros botões de pagamento aqui -->
+                <!-- <button type="button" class="payment-button other-button">Pagar com Cartão</button> -->
+            </div>
 
-<p style="text-align: center">(Escolha 5&nbsp;prognosticos entre 1x1 e 25x25):</p>
-</form>
+            <p style="text-align: center">(Escolha 5 prognosticos entre 1x1 e 25x25):</p>
+        </form>
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center">Sorteio</h2>
+        <p style="text-align: center"><button id="realizarSorteio">Realizar Sorteio</button></p>
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center">Distribuir Prêmios</h2>
+        <p style="text-align: center"><button id="distribuirPremios">Distribuir Prêmios</button></p>
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center">Reabrir Apostas</h2>
+        <p style="text-align: center"><button id="reabrirApostas">Reabrir Apostas</button></p>
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center">Mensagem</h2>
+        <div id="message" style="text-align: center">
+            <p><strong><span style="font-size: 22px">Para acessar o site da Lottery Bets In Bytes, clique no link abaixo:</span></strong></p>
+            <strong><span style="font-size: 22px"><a href="https://www.valeoescrito.com.br" target="_blank">Site da nossa Loteria Convencional</a></span></strong>
+        </div>
+    </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script>
+    // Verifica se o MetaMask está instalado
+    async function checkMetaMask() {
+        if (typeof window.ethereum !== 'undefined') {
+            console.log('MetaMask is installed!');
+            return true;
+        } else {
+            console.log('MetaMask is not installed!');
+            alert('MetaMask não detectado. Por favor, instale o MetaMask.');
+            return false;
+        }
+    }
 
-<div class="section">
-<h2 style="text-align: center">Sorteio</h2>
+    // Solicita a conexão com o MetaMask
+    async function connectMetaMask() {
+        try {
+            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+            const account = accounts[0];
+            console.log('Conta conectada:', account);
+            return account;
+        } catch (error) {
+            console.error("Erro ao conectar com MetaMask:", error);
+            alert("Erro ao conectar com MetaMask: " + error.message);
+            return null;
+        }
+    }
 
-<p style="text-align: center"><button id="realizarSorteio">Realizar Sorteio</button></p>
-</div>
+    // Função para realizar o pagamento (simulado)
+    async function makePayment(account) {
+        // Aqui você implementaria a lógica de pagamento real com o contrato inteligente
+        // Este exemplo é apenas uma simulação
 
-<div class="section">
-<h2 style="text-align: center">Distribuir Pr&ecirc;mios</h2>
+        const amount = 0.01; // Valor da aposta (exemplo)
+        const transactionParameters = {
+            to: 'ENDEREÇO_DO_CONTRATO', // Substitua pelo endereço do seu contrato
+            from: account,
+            value: web3.utils.toHex(web3.utils.toWei(amount.toString(), 'ether')), // Converte o valor para Wei
+            gas: '21000', // Limite de gás (ajuste conforme necessário)
+            gasPrice: web3.utils.toHex(web3.utils.toWei('10', 'gwei')), // Preço do gás (ajuste conforme necessário)
+        };
 
-<p style="text-align: center"><button id="distribuirPremios">Distribuir Pr&ecirc;mios</button></p>
-</div>
 
-<div class="section">
-<h2 style="text-align: center">Reabrir Apostas</h2>
+        try {
+           const transactionHash = await window.ethereum.request({
+                method: 'eth_sendTransaction',
+                params: [transactionParameters],
+            });
+            console.log('Transação enviada. Hash:', transactionHash);
+            alert('Pagamento realizado com sucesso! Hash da transação: ' + transactionHash);
+        } catch (error) {
+            console.error("Erro ao enviar a transação:", error);
+            alert("Erro ao enviar a transação: " + error.message);
+        }
+    }
 
-<p style="text-align: center"><button id="reabrirApostas">Reabrir Apostas</button></p>
-</div>
 
-<div class="section">
-<h2 style="text-align: center">Mensagem</h2>
+    // Evento de clique no botão MetaMask
+    document.getElementById('metamaskButton').addEventListener('click', async function() {
+        if (await checkMetaMask()) {
+            const account = await connectMetaMask();
+            if (account) {
+                await makePayment(account);
+            }
+        }
+    });
 
-<div id="message" style="text-align: center">
-<p><strong><span style="font-size: 22px">Para acessar o site da Lottery Bets In Bytes, clique no link abaixo:</span></strong></p>
-<strong><span style="font-size: 22px"><a href="https://www.valeoescrito.com.br" target="_blank">Site da nossa Loteria Convencional</a></span></strong></div>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script><script src="app.js"></script></body>
+    // Seu código JavaScript existente (app.js) pode ser incluído aqui ou em um arquivo separado
+    // Exemplo:
+    document.getElementById('realizarSorteio').addEventListener('click', function() {
+        alert('Função de sorteio simulada.');
+    });
+
+    // Adicione os listeners para os outros botões aqui
+</script>
+</body>
 </html>
